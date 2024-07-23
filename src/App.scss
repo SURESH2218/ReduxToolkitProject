@@ -1,0 +1,13 @@
+@import "../src/common/colors.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background: rgb(16, 16, 33);
+  color: white;
+}
