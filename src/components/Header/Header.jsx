@@ -10,9 +10,13 @@ import {
 
 const Header = () => {
   const [term, setTerm] = useState("");
+
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
+    if (term === "") {
+      return alert("please enter something");
+    }
     // console.log(term);
     dispatch(fetchAsyncMovies(term));
     dispatch(fetchAsyncShows(term));
