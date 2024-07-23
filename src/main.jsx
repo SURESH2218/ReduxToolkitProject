@@ -18,7 +18,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
-      <Route path="movie/:id" element={<MovieDetail />} />
+      <Route path="movie/:imdbId" element={<MovieDetail />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )
